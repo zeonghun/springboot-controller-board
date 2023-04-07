@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.ymtech.ojt.board.vo.Board;
 
+/**
+ * 게시판 목록 조회 클래스
+ * 
+ * @author zeonghun
+ * @since 2023.04.06
+ */
 @Controller
 @RequestMapping("/boards")
 public class BoardController {

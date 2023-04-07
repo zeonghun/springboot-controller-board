@@ -11,6 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import kr.ymtech.ojt.board.vo.Board;
 
+/**
+ * 게시판 목록 조회 클래스
+ * 
+ * @author zeonghun
+ * @since 2023.04.06
+ */
 @RestController
 @RequestMapping("/restboards")
 public class BoardRestController {
@@ -35,7 +41,7 @@ public class BoardRestController {
 
         return boards;
     }
-    
+
     /**
      * RequestParam을 이용하여 게시판 특정 목록을 조회하는 메소드
      * 
@@ -49,7 +55,7 @@ public class BoardRestController {
         // http://localhost:8080/restboards?bno=4
         System.out.println("bno: " + bno);
         Board board = new Board(4, "스프링부트란 무엇인가", "김정훈", "자바 프레임워크");
-    
+
         return board;
     }
 
