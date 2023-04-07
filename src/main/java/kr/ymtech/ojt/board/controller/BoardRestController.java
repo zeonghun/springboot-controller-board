@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import kr.ymtech.ojt.board.vo.Board;
+import kr.ymtech.ojt.board.dto.Board;
 
 /**
  * 게시판 목록 조회 클래스
@@ -55,7 +55,7 @@ public class BoardRestController {
         // http://localhost:8080/restboards?bno=4
         System.out.println("bno: " + bno);
         Board board = new Board(4, "스프링부트란 무엇인가", "김정훈", "자바 프레임워크");
-
+        
         return board;
     }
 
